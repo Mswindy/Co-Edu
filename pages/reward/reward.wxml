@@ -1,0 +1,24 @@
+<!--swiper-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!--items-list-->
+<view class='items-list'>
+ <view class='item' wx:for="{{itemlist}}" bindtap='ToDetails' data-index='{{index}}'>
+  <image class='userlogo' src='{{item.userlogo}}'></image>
+  <view class='prices-star'>
+   <button open-type="contact" class='star'><image src='{{item.star}}'image/></button>
+   <text class='prices'>￥{{item.prices}}/小时</text>
+  </view>
+  <view class='text'>
+   <view class='title'>{{item.title}}</view>
+   <text class='discribe'>{{item.desc}}</text>
+  </view>
+ </view>
+</view>

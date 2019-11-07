@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/search/search",
+    "pages/reward/reward",
+    "pages/logs/logs",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "Co-Edu",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#50b35d",
+    "list": [
+      {
+        "pagePath": "pages/search/search",
+        "text": "Search",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search-select.png"
+      },
+      {
+        "pagePath": "pages/reward/reward",
+        "text": "list",
+        "iconPath": "images/list.png",
+        "selectedIconPath": "images/list-select.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "mine",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine-select.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
